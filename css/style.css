@@ -8,26 +8,32 @@
 body {
 	font-family: 'Noto Sans Display', sans-serif;
 	line-height: 1.6;
-	color: #363630;
+	color: #38382d;
   background-color: #fafafa;
 	font-size: 62.5%;
 }
 ul {
   list-style: none;
 }
-p {
 
-	margin: 0 0 1em 0;
-}
-h2,
 h3,
+.main-text {
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+h1 {
+	font-size: 1.6rem;
+}
+
 a {
-	color: #093a58;
+	color: #2c2c25;
 }
-h2,
-h3 {
-	margin: 0 0 .8em 0;
+
+h2 {
+	padding: 3em 0;
 }
+
 a {
 	text-decoration: none;
 }
@@ -40,11 +46,70 @@ img {
 ==================================== */
 
 /* ---- Navigation ---- */
+#hero {
+	margin-bottom: ;
+}
+h1 {
+	margin-bottom: .4em;
+}
 
-.
+.main-nav a {
+	font-size: .9rem;
+	font-weight: bold;
+}
+
+.main-nav li {
+	padding: 1em 0;
+	background-color: #fff;
+	margin-bottom: .6em;
+}
+
+.img-hero {
+	width: 70%;
+}
+
+.main-header {
+	margin: 5em auto;
+}
+
 
 /* ---- Layout Containers ---- */
+.wrapper {
+	margin: 0 auto;
+}
 
+.main-header,
+.wrapper {
+	display: block;
+	text-align: center;
+	width: 92%;
+}
+
+.main-text,
+.card-text {
+font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+padding-bottom: 2em;
+}
+
+.main-text {
+	font-size: 1.2rem;
+	color: #484839;
+
+}
+
+.card-text {
+	font-size: .95rem;
+	color: #38382d;
+}
+
+.img-hero {
+	margin-bottom: 3em;
+}
+
+#portfolio {
+	background-color: #fff;
+}
 
 
 /* ---- Page Elements ---- */
@@ -56,11 +121,25 @@ img {
 ==================================== */
 
 @media (min-width: 769px) {
-	
+	.main-header,
+	.wrapper {
+		width: 70%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		color: red;
+}
 }
 @media (min-width: 1025px) {
-	
+	.main-header,
+	.wrapper {
+		max-width: 1150px;
+	}
+
 }
+
 
 /* body {
 	font-family: 'Varela Round', sans-serif;
