@@ -20,7 +20,6 @@ ul {
 h3,
 .main-text {
 	font-family: 'Open Sans', sans-serif;
-	
 }
 
 h1 {
@@ -29,6 +28,7 @@ h1 {
 
 a {
 	color: #2c2c25;
+	text-decoration: none;
 }
 
 h2 {
@@ -41,13 +41,9 @@ h3 {
 	margin-bottom: .6em;
 }
 
-a {
-	text-decoration: none;
-}
 img {
 	max-width: 100%;
 	margin-bottom: 3em;
-
 }
 
 /* ================================= 
@@ -85,17 +81,15 @@ padding: 3.3em 0;
 	margin: 0 auto 5.5em;
 }
 
-
 /* ---- Layout Containers ---- */
-#banner,
+.wrapper,
 #contact,
-.test,
-.main-header {
+.test {
 	width: 91%;
 	margin: 0 auto;
 }
 
-#banner,
+.wrapper,
 #contact {
 	background-color: #f9f9f9;
 	text-align: center;
@@ -204,12 +198,13 @@ main {
 ==================================== */
 
 @media (min-width: 768px) {
-	.wrapper {
-		padding-bottom: 3em;
-	}
-	.main-header h1 {
-		padding: 1.7em 0 .9em;
-		font-size: 1.7rem;
+.wrapper {
+	padding-bottom: 3em;
+}
+
+.main-header h1 {
+	padding: 1.7em 0 .9em;
+	font-size: 1.7rem;
 }
 
 .main-header {
@@ -262,7 +257,7 @@ main {
 	flex: 1 48.5%;
 }
 
-.container:nth-child(odd) {
+.odd {
 	margin-right: 1.5%;
 }
 
@@ -299,12 +294,94 @@ padding-bottom: 3em;
 	padding: 2em 0 6em;
 	font-size: .8rem;
 }
-}
+/* --------------------------------- */
 @media (min-width: 1025px) {
+main {
+	background-color: #fafafa;
+}
 
-	
+.main-header {
+	padding-top: 4.8em;
+	margin-bottom: 4.5em;
+}
+
+.main-header h1 {
+	padding: 0;
+}
+
+h2 {
+	font-size: .9rem;
+}
+
+.test {
+	width: 94.5%;
+}
+
+.wrapper,
+#contact {
+	width: 89%;
+	max-width: 1150px;
+}
+
+#portfolio {
+	background-color: #fff;
+	width: 94%;
+	margin: 0 auto;
+}
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-text {
+	margin-right: 1.7em;
+	padding-right: 0;
+	font-size: 1.3rem;
 
 }
+.test {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container {
+	flex: 1 30%;
+}
+
+.container {
+	margin-right: 1.7%;
+}
+
+.desktop {
+	margin-right: 0;
+}
+
+.card-text {
+	font-size: 1.1rem;
+	color: #22221c;
+	font-weight: 300;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.contact-text {
+	width: 58%;
+	}
+
+#contact .sub-text:nth-of-type(2) {
+	margin-bottom: .7em;
+}
+
+.footer-container {
+	padding-bottom: 2.1em;
+}
+
+}
+
+
+
 
 
 /* body {
