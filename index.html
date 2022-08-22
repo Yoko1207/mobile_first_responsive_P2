@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-    <title>Yoko's Portfolio</title>
-    <meta name="description" content="Yoko Iseki's portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="Stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap" rel="stylesheet">    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">  
+  <meta charset="utf-8">
+  <title>Yoko's Portfolio</title>
+  <meta name="description" content="Yoko Iseki's portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="Stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap" rel="stylesheet">    <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">  
 </head>
 <body>
   <div class="wrapper">
-    <header class="main-header">
+    <header id="main-header">
       <h1>Yoko Iseki</h1>
       <nav>
         <ul class="main-nav">
@@ -25,25 +25,23 @@
         </ul>
       </nav>
     </header>
+    <div class="banner">
+      <img class="img-banner" src="images/responsive-layout-profile.png" alt="a creator of the portfolio">
+      <p class="main-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished
+        a degree in front-end web development at Treehouse and am excited to put all my skills to use!
+      </p>
+    </div>
+  </div><!-- wrapper -->
 
-        <section id="banner">
-          <img class="img-banner" src="images/responsive-layout-profile.png" alt="a creator of the portfolio">
-          <p class="main-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished
-            a degree in front-end web development at Treehouse and am excited to put all my skills to use!
-          </p>
-        </section>
-    </div><!-- wrapper -->
-
-    <main>
-   
-      <section id="portfolio">
-        <h2 class="title-portfolio">PORTFOLIO</h2>
-        <div class="test">
+  <main>
+    <section id="portfolio">
+      <h2 class="title-portfolio">PORTFOLIO</h2>
+      <div class="flex">
         <div class="container odd">
           <img src="images/portfolio-1.png" alt="a web page showing a layout">
           <h3 class="sub-title">Marketing Page</h3>
           <p class="card-text">This project shows the front page of a marketing website meant for a specific 
-          business I'm interested in</p>
+          business I'm interested in.</p>
         </div>
 
         <div class="container">
@@ -80,24 +78,22 @@
           <p class="card-text">Someone can enter in the numbers they want, and press the big blue 
             button and get the result. </p>
         </div>
-      </div>
-      </section>
+      </div><!-- flex -->
+    </section>
 
-      <section id="contact">
-        <h2 class="title">CONTACT</h2>
-        <p class="contact-text">If you're interested in chatting or want more information about what 
-          I've been working on, I'd love to hear from you!</p>
-        <p class="sub-text">Phone<span class="sub">+1 (111) 555-1234</span></p>
-        <p class="sub-text">Email<span class="sub">email@yoursite.com</span></p>
-      </section>
-
-
+    <section id="contact">
+      <h2 class="title">CONTACT</h2>
+      <p class="contact-text">If you're interested in chatting or want more information about what 
+        I've been working on, I'd love to hear from you!</p>
+      <p class="sub-text">Phone<span class="sub">+1 (111) 555-1234</span></p>
+      <p class="sub-text"><a href="mailto:info@example.com">Email<span class="sub">yoko.dev1207@gmail.com</span></a></p>
+    </section>
   </main>
       
   <footer id="main-footer">
     <div class="footer-container">
-      <p class="footer-text">Yoko Iseki</p>
-      <p class="footer-text-mobile"><a>BACK TO TOP</a></p>
+      <p class="footer-text"><a href="#main-header">Yoko Iseki</a></p>
+      <p class="footer-text-mobile"><a href="#main-header">BACK TO TOP</a></p>
       <nav>
         <ul class="footer-nav">
           <li><a href="index.html">HOME</a></li>
